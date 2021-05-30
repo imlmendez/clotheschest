@@ -1,0 +1,291 @@
+
+////// Colors //////
+
+$color-black: #000;
+$color-gris-fons: #f9f9f9;
+$color-gris-fosc: #b4b9bc;
+$color-gris-font-standard: #9f9fa2;
+$color-blau-fosc: #1d3d91;
+$color-taronja: #f08228;
+$color-marro: #693306; /* no s'utilitza*/
+$color-lletra-formularis: #66666a;
+$color-white: #fff;
+$color-negre: #54585A;
+$color-red: #97522e; 
+$color-red-error: #ef5353;
+$white: #FFF;
+$prussian-blue: #004669;
+$bluegrey: #7FA2B4; 
+$marine-blue: #004669;
+$red: #ff0c0c;
+
+//nous
+$beige: #f9f3ee;
+$warm-grey:#979797;
+$beige-two: #eddbcd;
+$black: #2d2d2d;
+$beige-three: #dfc5a6;
+$pinkish-grey: #d9bcad;
+$pinkish-brown: #b77b60;
+$beige-two: #eddbcd;
+$beige-four: #e7ceb5;
+$beige-five: #f7eee5;
+$beige-six: #efe4d9;
+$pinkish-grey-two: #d6c7bc;
+$gunmetal: #54585a;
+$brownish-pink: #c3916e;
+////// Fonts //////
+
+$font-standard: 'PT Serif', sans-serif;
+$font-special: 'Fira Sans', sans-serif;
+$font-secondary: 'PT Serif Caption', sans-serif;
+$font-regular: 400;
+$font-medium: 500;
+$font-semibold: 600;
+$font-bold: 700;
+$font-light: 300;
+
+$font-size-normal: 18px;
+$font-size-title: 130px;
+
+$font-size-subtitle: 30px;
+$font-size-small-subtitle: 25px;
+$font-size-normal-mobile: 14px;
+
+$mida-footer: 49px;
+$mida-footer-lg: 39px;
+$mida-footer-md: 66px;
+$mida-footer-sm: 74px;
+$mida-header-xl:75px;
+$mida-header-md: 80px;
+$mida-header-sm: 60px;
+
+$mida-sidebar: 70px;
+$mida-sidebar-md: 65px;
+
+
+$margin-medium: 50px;
+$margin-big: 100px;
+// Classes helpers
+
+//// mides i espais ////
+
+$header-height: 124px;
+$mobile-header-height: 63px;
+$reforma-image-height: 866px;
+
+//marge abans del footer
+.page-space {
+    margin-bottom: 130px;
+
+    @include media-breakpoint-down(sm) {
+        margin-bottom: 50px;
+    }
+}
+
+
+///// Body & titles //////
+
+html
+{
+    scrollbar-width: none;
+}
+body{
+    font-family: $font-standard;
+    color: $color-red;
+    font-weight: $font-regular;
+    font-size: $font-size-normal;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.94;
+    background-color: $beige;
+    text-size-adjust: none !important;
+    padding-bottom: 0px !important;
+    font-display: swap;
+
+    @include media-breakpoint-down(lg){ font-size: 14px;}
+    @include media-breakpoint-down(sm){font-size: $font-size-normal-mobile;}
+
+    &.noscroll{
+        overflow: hidden;
+        position:fixed;
+        width: 100vw;
+    }
+    #content{
+        min-height: calc(100vh  - #{$mida-footer});
+        @include media-breakpoint-down(lg){
+            min-height: calc(100vh  - #{$mida-footer-lg});
+        }
+        @include media-breakpoint-down(md){
+            min-height: calc(100vh  - #{$mida-footer-md});
+        }
+        @include media-breakpoint-down(sm){
+            min-height: calc(100vh  - #{$mida-footer-sm});
+        }
+        /*
+        @media (max-width: 991px){
+        min-height: calc(100% - #{$mida-header-md} - #{$mida-footer});
+        }
+        @media (max-width: 767.98px){
+        min-height: calc(100% - #{$mida-header-sm} - #{$mida-footer});
+        }
+        */
+        /*
+        @media(min-width: 1921px){
+        min-height: unset;
+        height: 100vh;
+        }
+        */
+    }
+}
+$big-container: 1200px;
+$xxl: 1290px; //breakpoint xxl
+.container {
+    max-width:$big-container;
+    @media (max-width: 1440px) {
+        max-width: 950px;
+    }
+
+    @include media-breakpoint-down(lg){ 
+        max-width: 768px;
+        padding: 0px 31px;
+    }
+        
+    //@include media-breakpoint-down(md){max-width: calc(100vw - 20px);}
+    @include media-breakpoint-down(sm){
+        padding-left: 18px !important;
+        padding-right: 18px !important;
+        .vc_row{
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+        .vc_column-inner{
+            padding-right: 0px;
+            padding-left: 0px; 
+        }
+    }
+
+
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.no-margin{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.hiden-until-scroll{
+    opacity: 0;
+    transition: 1s all ease-in-out;
+    &.open{opacity: 1;}
+}
+
+.no-scroll-cookies{
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    position: relative;
+  }
+
+
+
+
+.cursor-pointer{cursor: pointer;}
+
+.vc_row[data-vc-full-width] {
+    padding-left: $mida-sidebar;
+
+    .vc_row{
+        margin-left: 0px ;
+        margin-right: 0px ;
+    }
+    .vc_column-inner{
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    @include media-breakpoint-down(md){
+        padding-left: 0px;
+    }
+
+}
+.no-scrollbar{
+    -ms-overflow-style: none;  // IE 10+
+    scrollbar-width: none;  // Firefox
+    &::-webkit-scrollbar { 
+      display: none;  // Safari and Chrome
+    }
+  }
+.no-scroll{
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+html, body {
+    &,* { cursor: none;}
+}
+
+.cursor-dot,
+.cursor-dot-outline {
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    opacity: 0;
+    z-index: 9999999;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease-in-out,
+                transform 0.3s ease-in-out;
+    @include media-breakpoint-down(lg){display: none;}
+}
+
+.cursor-dot {
+    $size: 12px;
+    width: $size;
+    height: $size;
+    background-color: #ba967d;
+    transition: background-color 1s ease-in-out,  opacity 1s ease-in-out;
+    &.special-cursor{
+        opacity: 0.7 !important;
+        background-color: $color-red;
+    }
+    &.menu-cursor{background-color: $white;}
+}
+
+.cursor-dot-outline {
+    $size: 70px;
+    width: $size;
+    height: $size;
+    border: 1px solid #ba967d;
+    transition: background-color 1s ease-in-out,  opacity 1s ease-in-out;
+    //background-color: rgba($primary-light, 0.5);
+    &.special-cursor{
+        border: solid 0.7px $color-red;
+        opacity: 0.26 !important;
+        background-color: $color-red;
+        transform: translate(-50%, -50%) scale(1) !important;
+    }
+    
+    &.menu-cursor{
+        border: solid 0.7px $color-red;
+        opacity: 0.65 !important;
+        background-color: $color-red;
+        transform: translate(-50%, -50%) scale(1) !important;
+        background-blend-mode: multiply;
+        z-index: 99;
+    }
+    
+}
+.no-interactive{
+    pointer-events: none !important;
+}

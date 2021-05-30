@@ -1,0 +1,188 @@
+/// CSS PER TEMPLATES
+
+
+// 404
+.error404{
+    .header-class{
+        .header-buttons{
+            display: none;
+        }
+    } 
+    .menu-opener{
+        display: none;
+    }
+    background-color: $beige;
+    padding-top: 14vh;
+    #content.site-content{
+        min-height: calc(100vh - #{$mida-header-xl});
+    }
+    .img-404{
+        display: flex;
+        justify-content: space-around;
+        >svg{
+            opacity: 0;
+            transition: all 1s ease-in;
+        }
+        >svg:first-child{
+            //transform: translateX(-100%);
+            &.show{
+                opacity: 1;
+                //transform: translateX(0%);
+            }
+        }
+        >svg:nth-child(3){
+            //transform: translateX(100%);
+            &.show{
+                opacity: 1;
+                //transform: translateX(0%);
+            }
+        }
+        .img-404{
+            opacity: 0;
+            transition: all 1s ease-in;
+            &.show{opacity: 1;}
+        }
+    }
+    .texto-404{
+        text-align: center;
+        margin-top: 100px;
+        opacity: 0;
+        transition: all 1s ease-in-out;
+        
+        h1{
+            font-size: 30px;
+            letter-spacing: -0.16px;
+            color: $color-negre;
+            line-height: normal;
+            margin-bottom: 0px;
+            font-weight: $font-regular;
+        }
+
+        .bttn{
+            margin-top: 50px;
+            display: inline-block;
+            font-size: 18px;
+            letter-spacing: 7px;
+
+        }
+        &.show{
+            opacity: 1;
+            animation-name: fadeInUp;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+        }
+    }
+    @include media-breakpoint-down(lg){
+        .error-404{
+            max-width: 800px !important;
+            padding: 0px;
+        }
+        .texto-404{
+            margin-top: 90px;
+            h1{
+               font-size: 22px;
+               letter-spacing: -0.12px; 
+            }
+            .bttn{
+                margin-top: 30px;
+                font-size: 14px;
+                letter-spacing: 5.4px;
+            }
+        }
+        .img-404{
+            >svg{
+                width: 100%;
+                max-width: 190px;
+            }
+            .img-404{transform: scale(0.8);}
+        }
+    }
+    @include media-breakpoint-down(md){
+        .error-404{ max-width: 720px !important;}
+        .img-404{
+            >svg{max-width: 162px;}
+            .img-404{transform: scale(0.6);}
+        }
+        .texto-404{
+            margin-top: 18vh;
+            .bttn{ margin-top: 24px;}
+        }
+    }
+    @include media-breakpoint-down(sm){
+        .error-404{
+            padding-left: 0px  !important;
+            padding-right: 0px !important;
+            max-width: 404;
+            .row{margin-right: 0px;margin-left: 0px;}
+            .col-12{
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+        }
+        .img-404{
+            align-items: center;
+            >svg{
+                max-width: 162px;
+                max-height: 100px;
+            }
+            .img-404{
+                transform: none;
+                width: 33vw;
+                max-width: 130px;
+            }
+        }
+        .texto-404{
+            margin-top: 80px;
+            h1{
+               font-size: 16px;
+               letter-spacing: 0px; 
+            }
+            .bttn{
+                margin-top: 50px;
+                font-size: 12px;
+                letter-spacing: 4px;
+            }
+        }
+    }
+}
+
+.site-main{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.home{
+    .products{
+        display: flex;
+        list-style: none;
+        margin-top: 150px;
+        margin-bottom: 100px;
+        justify-content: space-between;
+    }
+    h1{
+        margin-top: 50px;
+        margin-bottom: 100px;
+        text-align: center;
+
+    }
+    iframe{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .product{
+        width: 20%;
+        a{
+            color: $black;
+            text-decoration: none !important;
+        }
+        img{
+            object-fit: cover;
+        }
+        .price{
+            font-weight: 700;
+        }
+        h2{font-size: 20px;}
+    }
+    .add_to_cart_button{display: none;}
+}

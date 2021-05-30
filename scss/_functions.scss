@@ -1,0 +1,59 @@
+@function strip-unit($value) {
+    @return $value / ($value * 0 + 1);
+}
+
+@mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
+    $u1: unit($min-vw);
+    $u2: unit($max-vw);
+    $u3: unit($min-font-size);
+    $u4: unit($max-font-size);
+
+    @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+        & {
+            font-size: $min-font-size;
+            @media screen and (min-width: $min-vw) {
+                font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+            }
+            @media screen and (min-width: $max-vw) {
+                font-size: $max-font-size;
+            }
+        }
+    }
+}
+
+//funció per posar fonts en em
+
+$browser-context: 16; // Default
+
+@function em($pixels, $context: $browser-context) {
+    @return #{$pixels/$context}em;
+}
+
+@mixin transition($transition...) {
+    -moz-transition: $transition;
+    -o-transition: $transition;
+    -webkit-transition: $transition;
+    transition: $transition;
+}
+
+@mixin transform($transforms) {
+    -moz-transform: $transforms;
+    -o-transform: $transforms;
+    -ms-transform: $transforms;
+    -webkit-transform: $transforms;
+    transform: $transforms;
+}
+
+@mixin transform-origin($transforms) {
+    -moz-transform-origin: $transforms;
+    -o-transform-origin: $transforms;
+    -ms-transform-origin: $transforms;
+    -webkit-transform-origin: $transforms;
+    transform-origin: $transforms;
+}
+
+@mixin hover-state {
+    &:hover, &:active, &:focus {
+        @content;
+    }
+}
