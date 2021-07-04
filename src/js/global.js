@@ -25,7 +25,7 @@ options = {
 };
 
 id = navigator.geolocation.watchPosition(success, error, options);
-Notification.requestPermission().then(function(permission) { console.log('permiss', permission)});
+//Notification.requestPermission().then(function(permission) { console.log('permiss', permission)});
 
 
   
