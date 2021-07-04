@@ -35,7 +35,7 @@ function wp_bootstrap_starter_posted_on() {
 	echo '<span class="posted-on">' . $posted_on . '</span> | <span class="byline"> ' . $byline . '</span>'; // WPCS: XSS OK.
 
     if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
-        echo ' | <span class="comments-link"><i class="fa fa-comments" aria-hidden="true"></i> ';
+        echo ' | <span class="comments-link"><i class="fa fa-comments" ></i> ';
         /* translators: %s: post title */
         comments_popup_link( sprintf( wp_kses( __( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'clotheschest' ), array( 'span' => array( 'class' => array() ) ) ), get_the_title() ) );
         echo '</span>';

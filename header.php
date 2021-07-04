@@ -48,11 +48,11 @@
     }
 
 ?>
-<body <?php body_class([$scroll_body,'no-scrollbar']); ?> aria-hidden="true">
+<body <?php body_class([$scroll_body,'no-scrollbar']); ?> >
 <input id="myInput" class="d-none input-secreto" type="password">
 
 <div id="page" class="site">
-    <div class="cursor-dot-outline" aria-hidden="true"></div>
+    <div class="cursor-dot-outline" ></div>
     <div class="cursor-dot"></div>
 
     <!-- <header id="masthead" class="site-header <?php echo $header_fixed; ?>" role="banner"> -->
