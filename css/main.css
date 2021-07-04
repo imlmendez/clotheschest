@@ -12471,6 +12471,12 @@ html, html *, body, body * {
   margin-right: auto;
   display: block;
 }
+.home .gif {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  min-width: 50%;
+}
 .home .products {
   display: -webkit-box;
   display: -ms-flexbox;
