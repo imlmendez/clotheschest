@@ -10,7 +10,7 @@ get_header();
     <!-- <div id="primary" class="content-area">
         <div id="main" class="site-main" role="main"> -->
             <!-- <h1 class="h1-seo">Welcome to the future of shopping</h1> -->
-            <h3 class="h1-seo">Welcome to the future of shopping</h3>
+            <h1 class="h1-seo">Welcome to the future of shopping, clothes in the chest</h1>
              <video width="640" height="480" controls>
                 <source src="<?php echo get_template_directory_uri().'/images/minvideo.mp4' ?>" type="video/mp4">
                 Your browser does not support the video tag.
