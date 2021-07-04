@@ -4,7 +4,7 @@
  *
  */
 
-// ?> <!-- <DOCTYPE html>-->
+// ?> <DOCTYPE html>
 <html <?php //language_attributes(); ?>  manifest="example.appcache">
 <head>
 <!--
