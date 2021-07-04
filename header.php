@@ -55,9 +55,9 @@
     <div class="cursor-dot-outline" ></div>
     <div class="cursor-dot"></div>
 
-    <!-- <header id="masthead" class="site-header <?php echo $header_fixed; ?>" role="banner"> -->
+    <header id="masthead" class="site-header <?php echo $header_fixed; ?>" role="banner">
     <!-- <header id="masthead" class="site-header <?php echo $header_fixed; ?>" > -->
-    <div id="masthead" class="site-header <?php echo $header_fixed; ?>" >
+    <!-- <div id="masthead" class="site-header <?php echo $header_fixed; ?>" > -->
 
         <div class="header-class">
             <div class="container-fuid header-content">
@@ -79,7 +79,7 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!--</header>--><!-- #masthead -->
+    <!-- </div> -->
+    </header>--><!-- #masthead
     <div id="content" class="site-content <?php echo $padding_site; ?>">
         
