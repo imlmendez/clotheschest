@@ -5,10 +5,10 @@
 
 get_header();
 ?>
-    <!-- <section id="primary" class="content-area">
-        <main id="main" class="site-main" role="main"> -->
-    <div id="primary" class="content-area">
-        <div id="main" class="site-main" role="main">
+    <section id="primary" class="content-area">
+        <main id="main" class="site-main" role="main">
+    <!-- <div id="primary" class="content-area">
+        <div id="main" class="site-main" role="main"> -->
             <!-- <h1 class="h1-seo">Welcome to the future of shopping</h1> -->
             <h3 class="h1-seo">Welcome to the future of shopping</h3>
              <video width="640" height="480" controls>
@@ -31,10 +31,10 @@ get_header();
                         wp_reset_postdata();
                     ?>
                     </ul>
-        </div>
-    </div>
-        <!-- </main>
-    </section> -->
+        <!-- </div>
+    </div> -->
+        </main>
+    </section>
 
 <?php
 get_footer();
