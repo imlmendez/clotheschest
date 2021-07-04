@@ -37,13 +37,6 @@ $(document).ready(function(){
 
 
 
-    const myInput = document.getElementById('myInput');
-    myInput.onpaste = e => e.preventDefault();
-
-
-
-
-
     toggleMenu();
     $(window).resize(function() {
         toggleMenu();
