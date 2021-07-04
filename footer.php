@@ -12,9 +12,9 @@
 
 ?>
 </div>
-<!--<footer id="site-footer" class="site-footer" role="contentinfo">-->
+<footer id="site-footer" class="site-footer" role="contentinfo">
 <!-- <footer id="site-footer" class="site-footer" > -->
-<div id="site-footer" class="site-footer"  role="contentinfo" >
+<!-- <div id="site-footer" class="site-footer"  role="contentinfo" > -->
 
     <div class="content-footer">
         <p class="footer-info">Copyright 2021, clotheschest. <br><?php _e("Tots els drets reservats","clotheschest"); ?></p>
@@ -34,8 +34,8 @@
         <a class="social-link" target="_blank" href=""><i class="icon-facebook"></i></a>
         <a class="social-link" target="_blank" href=""><i class="icon-twitter"></i></a>
     </div>
-</div>
-<!-- </footer> -->
+<!-- </div> -->
+</footer>
 <?php
 wp_footer(); 
 ?>

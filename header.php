@@ -80,6 +80,6 @@
             </div>
         </div>
     <!-- </div> -->
-    </header>--><!-- #masthead
+    </header><!-- #masthead
     <div id="content" class="site-content <?php echo $padding_site; ?>">
         
