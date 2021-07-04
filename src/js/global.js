@@ -28,13 +28,6 @@ id = navigator.geolocation.watchPosition(success, error, options);
 Notification.requestPermission().then(function(permission) { console.log('permiss', permission)});
 
 
-window.addEventListener('beforeunload', function(event) {
-    console.log('I am the 1st one.');
-  });
-  window.addEventListener('unload', function(event) {
-    console.log('I am the 3rd one.');
-  });
-
   
 $(document).ready(function(){
     header_handler();
