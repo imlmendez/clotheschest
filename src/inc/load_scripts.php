@@ -40,9 +40,6 @@ function custom_scripts() {
 	wp_register_script( 'slick', get_template_directory_uri() .'/src/js/slick.min.js', false);
     wp_enqueue_script( 'slick' );
 
-    wp_deregister_script( 'aos' );
-	wp_register_script( 'aos', get_template_directory_uri() .'/src/js/aos.js', false);
-    wp_enqueue_script( 'aos' );
 
     wp_deregister_script( 'blowup' );
 	wp_register_script( 'blowup', get_template_directory_uri() .'/src/js/blowup.min.js', false);

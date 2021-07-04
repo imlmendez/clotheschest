@@ -1,7 +1,6 @@
 
 $(document).ready(function(){
     //abrimos la pastilla, despeus de que la imagen inicial se muestre (1s)
-    console.log(getUrlParameter('skip'));
     if(!getUrlParameter('skip')){
    
  
