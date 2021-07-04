@@ -30,26 +30,11 @@
     <meta name="msapplication-TileImage" content="<?php echo  get_template_directory_uri()  . "/favicon" ?>/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    <link rel="preload" href="<?php echo  get_template_directory_uri() . "/src/fonts/FiraSans-Black.woff2" ?>" as="font" crossorigin="anonymous" />
-    <link rel="preload" href="<?php echo  get_template_directory_uri() . "/src/fonts/FiraSans-BlackItalic.woff2" ?>" as="font" crossorigin="anonymous" />
     <link rel="preload" href="<?php echo  get_template_directory_uri() . "/src/fonts/FiraSans-Bold.woff2" ?>" as="font" crossorigin="anonymous" />
-    <link rel="preload" href="<?php echo  get_template_directory_uri() . "/src/fonts/FiraSans-BoldItalic.woff2" ?>" as="font" crossorigin="anonymous" />
-    <link rel="preload" href="<?php echo  get_template_directory_uri() . "/src/fonts/FiraSans-ExtraBoldItalic.woff2" ?>" as="font" crossorigin="anonymous" />
-    <link rel="preload" href="<?php echo  get_template_directory_uri() . "/src/fonts/FiraSans-ExtraLight.woff2" ?>" as="font" crossorigin="anonymous" />
     <link rel="preload" href="<?php echo  get_template_directory_uri() . "/src/fonts/FiraSans-Italic.woff2" ?>" as="font" crossorigin="anonymous" />
-    <link rel="preload" href="<?php echo  get_template_directory_uri() . "/src/fonts/FiraSans-Light.woff2" ?>" as="font" crossorigin="anonymous" />
-    <link rel="preload" href="<?php echo  get_template_directory_uri() . "/src/fonts/FiraSans-LightItalic.woff2" ?>" as="font" crossorigin="anonymous" />
     <link rel="preload" href="<?php echo  get_template_directory_uri() . "/src/fonts/FiraSans-Medium.woff2" ?>" as="font" crossorigin="anonymous" />
-    <link rel="preload" href="<?php echo  get_template_directory_uri() . "/src/fonts/FiraSans-MediumItalic.woff2" ?>" as="font" crossorigin="anonymous" />
-    <link rel="preload" href="<?php echo  get_template_directory_uri() . "/src/fonts/FiraSans-Regular.woff2" ?>" as="font" crossorigin="anonymous" />
-    <link rel="preload" href="<?php echo  get_template_directory_uri() . "/src/fonts/FiraSans-SemiBold.woff2" ?>" as="font" crossorigin="anonymous" />
-    <link rel="preload" href="<?php echo  get_template_directory_uri() . "/src/fonts/FiraSans-SemiBoldItalic.woff2" ?>" as="font" crossorigin="anonymous" />
-    <link rel="preload" href="<?php echo  get_template_directory_uri() . "/src/fonts/FiraSans-Thin.woff2" ?>" as="font" crossorigin="anonymous" />
-    <link rel="preload" href="<?php echo  get_template_directory_uri() . "/src/fonts/FiraSans-ThinItalic.woff2" ?>" as="font" crossorigin="anonymous" />
     <link rel="preload" href="<?php echo  get_template_directory_uri() . "/src/fonts/PTSerif-Bold.woff2" ?>" as="font" crossorigin="anonymous" />
-    <link rel="preload" href="<?php echo  get_template_directory_uri() . "/src/fonts/PTSerif-BoldItalic.woff2" ?>" as="font" crossorigin="anonymous" />
     <link rel="preload" href="<?php echo  get_template_directory_uri() . "/src/fonts/PTSerif-Caption.woff2" ?>" as="font" crossorigin="anonymous" />
-    <link rel="preload" href="<?php echo  get_template_directory_uri() . "/src/fonts/PTSerif-CaptionItalic.woff2" ?>" as="font" crossorigin="anonymous" />
     <link rel="preload" href="<?php echo  get_template_directory_uri() . "/src/fonts/PTSerif-Italic.woff2" ?>" as="font" crossorigin="anonymous" />
     <link rel="preload" href="<?php echo  get_template_directory_uri() . "/src/fonts/PTSerif-Regular.woff2" ?>" as="font" crossorigin="anonymous" />
 
@@ -95,7 +80,7 @@
                         <span><?php _e("93 805 06 04","clotheschest"); ?></span>
                     </div>  
                     <div class="seguir enlarge">
-                        <a href="https://www.instagram.com/#" target="_blank"><i class="icon-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="icon-instagram"></i></a>
                         <span><?php _e("Síganos","clotheschest");?></span>
                     </div>
                 </div>
