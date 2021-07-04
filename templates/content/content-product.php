@@ -2,7 +2,7 @@
 
 <?php do_action( 'woocommerce_before_shop_loop_item' ); ?>
 
-<a href="<?php the_permalink(); ?>">
+<a class="abcd" href="<?php the_permalink(); ?>">
 
     <h3><?php the_title(); ?></h3>
     <?php
@@ -14,7 +14,7 @@
          */
         do_action( 'woocommerce_before_shop_loop_item_title' );
     ?>
-
+    <img  src="<?php echo wp_get_attachment_image_url(get_the_ID(), 'full' ); ?>">
 
     <?php
         /**

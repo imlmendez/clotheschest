@@ -11,8 +11,12 @@ get_header();
         <div id="main" class="site-main" role="main">
             <!-- <h1 class="h1-seo">Welcome to the future of shopping</h1> -->
             <h3 class="h1-seo">Welcome to the future of shopping</h3>
-            <iframe src="https://player.vimeo.com/video/538794719" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-                <ul class="products">
+             <video width="640" height="480" controls>
+                <source src="<?php echo get_template_directory_uri().'/images/video.mp4' ?>" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>             
+                
+                 <ul class="products">
                     <?php
                         $args = array(
                             'post_type' => 'product',

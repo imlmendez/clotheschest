@@ -152,6 +152,12 @@
     margin-right: auto;
 }
 .home{
+    video{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    
     .products{
         display: flex;
         list-style: none;
@@ -178,11 +184,16 @@
         }
         img{
             object-fit: cover;
+            
+            height: auto;
+            width: 100%;
+
         }
         .price{
             font-weight: 700;
         }
         h2{font-size: 20px;}
+        
     }
     .add_to_cart_button{display: none;}
 }

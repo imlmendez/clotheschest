@@ -12466,6 +12466,11 @@ html, html *, body, body * {
   margin-right: auto;
 }
 
+.home video {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
 .home .products {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12497,6 +12502,8 @@ html, html *, body, body * {
 .home .product img {
   -o-object-fit: cover;
      object-fit: cover;
+  height: auto;
+  width: 100%;
 }
 .home .product .price {
   font-weight: 700;
