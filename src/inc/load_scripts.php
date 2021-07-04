@@ -2,8 +2,18 @@
 
 function theme_enqueue_styles() {
 
-    wp_register_style( 'main', get_template_directory_uri() .'/css/main.css', false, '1.0' );
-    wp_enqueue_style( 'main' ); 
+ 
+    if(is_front_page() || is_home()){
+        wp_register_style( 'home', get_template_directory_uri() .'/css/home.css', false, '1.0' );
+        wp_enqueue_style( 'home' ); 
+    
+    }
+
+    else{
+        wp_register_style( 'main', get_template_directory_uri() .'/css/main.css', false, '1.0' );
+        wp_enqueue_style( 'main' ); 
+    
+    }
     wp_register_style( 'font_file', get_template_directory_uri() .'/src/fonts/font_file.css', false, '1.0' );
 	wp_enqueue_style( 'font_file' );/* font del tema */
 
