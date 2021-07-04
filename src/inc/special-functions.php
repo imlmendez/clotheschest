@@ -4,10 +4,11 @@
 @ini_set( 'post_max_size', '64M');
 @ini_set( 'max_execution_time', '300' );
 
-
+/*
 remove_image_size('large');
 remove_image_size('medium');
 remove_image_size('thumbnail');
+*/
 
 
 add_filter( 'big_image_size_threshold', '__return_false' );
