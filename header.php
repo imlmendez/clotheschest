@@ -5,7 +5,7 @@
  */
 
 // ?> <DOCTYPE html>
-<html <?php //language_attributes(); ?>  manifest="example.appcache">
+<html <?php //language_attributes(); ?> >
 <head>
 <!--
     <meta charset="<?php bloginfo( 'charset' ); ?>">
